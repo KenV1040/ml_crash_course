@@ -4,7 +4,7 @@ from __future__ import print_function
 import pandas as pd 
 
 # Prints out panda version
-print(pd.__version__)
+#print(pd.__version__)
 
 # Create a series by using the Series object
 sample = pd.Series(['sample data', 'sampeldata2'])
@@ -20,4 +20,7 @@ california_housing_df = pd.read_csv("https://download.mlcc.google.com/mledu-data
 #print(california_housing_df.describe())
 
 # Prints the first few records of DataFrame
-print(california_housing_df.head)
+#print(california_housing_df.head())
+
+# DataFrame.hist allows you to quickly study the distribution of values in a column
+print(california_housing_df.hist())
