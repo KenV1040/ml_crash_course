@@ -7,9 +7,9 @@ import pandas as pd
 print(pd.__version__)
 
 # Create a series by using the Series object
-sample = pd.Series(['sample data'], ['sample data 2'])
-data = pd.Series(['another'],['set'])
+sample = pd.Series(['sample data', 'sampeldata2'])
+data = pd.Series([2300, 23000])
 
 # To create a DataFrame, pass a dict mapping.
 dataFrame = pd.DataFrame({'sample':sample, 'data':data})
-
+print(dataFrame)
